@@ -2615,7 +2615,17 @@ input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
   border-color: #eeeeee;
 }
-
+.skills {
+  display: flex;
+}
+.skills-1 {
+  margin-right: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .skills {
+    flex-wrap: wrap;
+  }
+}
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
   background-color: #212931;
