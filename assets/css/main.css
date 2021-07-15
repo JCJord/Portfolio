@@ -2625,6 +2625,9 @@ input[type="radio"] + label:before {
   .skills {
     flex-wrap: wrap;
   }
+  .skills-2 {
+    margin-top: -30px;
+  }
 }
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
