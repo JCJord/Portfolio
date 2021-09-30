@@ -4,11 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/main.css" />
     <title>JC</title>
   </head>
+  <header>
+    <div class="wrapper">
+      <div class="header-box">
+        <div class="logo"><a class="logo-text">JC.</a></div>
+        <div class="links-desktop">
+          <ul>
+            <li>
+              <a href="" class="link">Me</a>
+            </li>
+            <li><a href="" class="link">Awards</a></li>
+            <li><a href="" class="link">Showcase</a></li>
+            <li><a href="" class="link">Why me</a></li>
+            <li><a href="" class="link">Github</a></li>
+          </ul>
+        </div>
+        <div class="burger" id="nav-icon4">
+          <span class="dash"></span>
+          <span class="dash-2"></span>
+          <span class="dash-3"></span>
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <div class="side-links-box">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
   <body>
-    <header></header>
-    <h1>Hi, My name is Julio</h1>
-    <div class="test"></div>
+    <section>
+      <div class="col-1">
+        <div class="col-1-title">
+          <h3><span id="typed"></span></h3>
+        </div>
+        <div class="col-1-subtitle">
+          <h1>Front-end Developer</h1>
+        </div>
+        <div class="col-1-description">
+          <p>Nice to e-meet you!</p>
+          <p>My name is Júlio, my clients call me JC.</p>
+        </div>
+        <div class="button-box"><a href="">Scroll Down</a></div>
+      </div>
+      <div class="col-2">
+        <img src="./assets/images/julio.jpg" alt="" />
+      </div>
+    </section>
   </body>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var options = {
+      strings: ["Front-end", "Back-end", "User interface"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      loop: true,
+    }
+
+    var typed = new Typed("#typed", options)
+  </script>
 </html>

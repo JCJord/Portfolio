@@ -1,0 +1,86 @@
+@mixin content() {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@mixin displayFlex($display) {
+  display: $display;
+  flex: 1 1;
+  width: 100%;
+}
+.wrapper {
+  @include content();
+}
+
+section {
+  @include content();
+  @include displayFlex(flex);
+}
+
+.col-1 {
+  font-size: 40px;
+  margin-top: 150px;
+}
+.col-1-subtitle h1 {
+  font-size: 6rem;
+  background-image: linear-gradient(
+    76.9deg,
+    rgba(255, 90, 90, 1) 27.2%,
+    rgba(130, 5, 255, 1) 79.9%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.col-1-title h3 {
+  font-size: 2.3rem;
+  color: $devtitle;
+}
+.col-1-description {
+  margin-top: 15px;
+}
+.col-1-description p {
+  font-size: 17px;
+}
+.col-1-description p:first-child {
+  padding-bottom: 5px;
+}
+.col-2 {
+  font-size: 40px;
+  margin-left: 150px;
+}
+.col-2 img {
+  width: 100%;
+}
+.button-box {
+  margin-top: 2.6rem;
+  width: 185px;
+  margin-bottom: 1em;
+  font-size: 17px;
+}
+.side-links-box {
+  margin-top: 160px;
+}
+.button-box a {
+  background-color: $button;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: $clearWhite;
+
+  padding: 15px 30px;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    flex-wrap: wrap;
+  }
+  .col-1-subtitle h1 {
+    font-size: 3.4rem;
+  }
+  .col-1-title h3 {
+    font-size: 2.4rem;
+  }
+  .col-1 {
+    margin-top: 0;
+  }
+}
