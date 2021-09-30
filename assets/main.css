@@ -22,8 +22,8 @@
   /* Disable horizontal scroll */
   padding-top: 60px;
   /* Place content 60px from the top */
-  -webkit-transition: visibility 0s, opacity 0.5s linear;
-  transition: visibility 0s, opacity 0.5s linear;
+  -webkit-transition: visibility 1s, opacity 0.5s linear;
+  transition: visibility 1s, opacity 0.5s linear;
   opacity: 0;
 }
 
@@ -39,7 +39,7 @@
   font-size: 38px;
   color: #fff;
   display: block;
-  border-bottom: 1px solid white;
+  border: dotted;
   text-align: center;
   z-index: 0;
 }
