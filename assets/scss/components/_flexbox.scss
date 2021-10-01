@@ -24,8 +24,8 @@ section {
   font-size: 6rem;
   background-image: linear-gradient(
     76.9deg,
-    rgba(255, 90, 90, 1) 27.2%,
-    rgba(130, 5, 255, 1) 79.9%
+    rgb(255, 73, 73) 27.2%,
+    rgb(226, 61, 96) 79.9%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -33,6 +33,7 @@ section {
 .col-1-title h3 {
   font-size: 2.3rem;
   color: $devtitle;
+  margin-left: 6px;
 }
 .col-1-description {
   margin-top: 15px;
@@ -77,10 +78,16 @@ section {
   .col-1-subtitle h1 {
     font-size: 3.4rem;
   }
+  .col-1-title h3,
+  span {
+    font-size: 2rem;
+    color: $devtitle;
+    margin-left: 2px;
+  }
   .col-1-title h3 {
     font-size: 2.4rem;
   }
   .col-1 {
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
