@@ -21,6 +21,7 @@ header {
 .header-box {
   @include display(flex, none);
   font-family: "Open Sans", sans-serif;
+  background-color: $clearWhite;
 }
 
 .links-desktop {
@@ -77,7 +78,7 @@ li {
 .burger {
   @include adjustItems(23px 0px 10px);
   cursor: pointer;
-  position: relative;
+  position: inherit;
   display: none;
   z-index: 99999;
 }

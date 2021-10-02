@@ -15,6 +15,13 @@ body {
   margin-left: 25px;
   margin-right: 25px;
 }
+.about-section {
+  padding-bottom: 40px;
+}
+.col-3-container {
+  position: relative;
+  z-index: -1;
+}
 @media only screen and (max-width: 1100px) {
   .wrapper {
     @include mobileSpace();
@@ -25,5 +32,19 @@ body {
   }
   .col-2 {
     @include mobileSpace();
+  }
+  .col-3 {
+    @include mobileSpace();
+  }
+  .col-4 {
+    @include mobileSpace();
+  }
+  .col-1 h1 {
+    font-size: 9vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .col-1 h1 {
+    font-size: 48px;
   }
 }
