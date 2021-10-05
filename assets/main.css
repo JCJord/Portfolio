@@ -445,6 +445,11 @@ section {
   margin-top: 20px;
 }
 
+.container {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #222222));
+  background: linear-gradient(to right, #fff 50%, #222222 50%);
+}
+
 @media screen and (max-width: 768px) {
   section {
     -ms-flex-wrap: wrap;
@@ -476,6 +481,9 @@ section {
   }
   .col-3 {
     margin-top: 0px;
+  }
+  .container {
+    background: none;
   }
 }
 
@@ -531,6 +539,10 @@ a {
     margin-right: 25px;
   }
   .col-5 {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .col-6 {
     margin-left: 25px;
     margin-right: 25px;
   }

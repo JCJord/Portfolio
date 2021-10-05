@@ -39,7 +39,6 @@ function menuHandler() {
 
   burger.addEventListener("click", () => {
     if (!burger.classList.contains("open")) {
-      console.log("Aberto")
       burger.classList.add("open")
 
       addColorLogo()
@@ -47,7 +46,6 @@ function menuHandler() {
       visibleCross()
       scrollOff()
     } else if (burger.classList.contains("open")) {
-      console.log("Fechado")
       burger.classList.remove("open")
 
       removeColorLogo()

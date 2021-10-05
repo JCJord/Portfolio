@@ -48,7 +48,9 @@ a {
   .col-5 {
     @include mobileSpace();
   }
-
+  .col-6 {
+    @include mobileSpace();
+  }
   .col-1 h1 {
     font-size: 9vw;
   }

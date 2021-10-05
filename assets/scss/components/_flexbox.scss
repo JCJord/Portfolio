@@ -183,6 +183,9 @@ section {
 .next-pages {
   margin-top: 20px;
 }
+.container {
+  background: linear-gradient(to right, $clearWhite 50%, $lightBlack 50%);
+}
 @media screen and (max-width: 768px) {
   section {
     flex-wrap: wrap;
@@ -213,6 +216,9 @@ section {
   }
   .col-3 {
     @include fillDiv(0px);
+  }
+  .container {
+    background: none;
   }
 }
 @media screen and (max-width: 1040px) {
