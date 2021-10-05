@@ -385,10 +385,6 @@ section {
   margin-bottom: 10px;
 }
 
-.projects {
-  border-radius: 15px;
-}
-
 .project-description {
   max-width: 525px;
 }
@@ -414,11 +410,12 @@ section {
 }
 
 .projects {
-  border-bottom: 1px solid #b3b3b3;
+  border-bottom: 1px solid #c9c9c9;
+  padding-bottom: 15px;
 }
 
 .col-6 {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .project-description {
@@ -438,6 +435,14 @@ section {
 
 .bullets {
   margin-right: 25px;
+}
+
+.overview-box {
+  margin-bottom: 10px;
+}
+
+.next-pages {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -469,14 +474,8 @@ section {
   .col-3-description p {
     max-width: none;
   }
-  .col-6 {
-    margin-top: 15px;
-  }
-}
-
-@media screen and (max-width: 1040px) {
-  .col-6 {
-    margin-left: 20px;
+  .col-3 {
+    margin-top: 0px;
   }
 }
 
@@ -532,10 +531,6 @@ a {
     margin-right: 25px;
   }
   .col-5 {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .col-6 {
     margin-left: 25px;
     margin-right: 25px;
   }

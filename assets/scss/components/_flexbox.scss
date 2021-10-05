@@ -135,9 +135,7 @@ section {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.projects {
-  border-radius: 15px;
-}
+
 .project-description {
   max-width: 525px;
 }
@@ -157,11 +155,12 @@ section {
 }
 
 .projects {
-  border-bottom: 1px solid rgb(179, 179, 179);
+  border-bottom: 1px solid rgb(201, 201, 201);
+  padding-bottom: 15px;
 }
 
 .col-6 {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .project-description {
@@ -177,6 +176,12 @@ section {
 }
 .bullets {
   margin-right: 25px;
+}
+.overview-box {
+  margin-bottom: 10px;
+}
+.next-pages {
+  margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
   section {
@@ -206,12 +211,9 @@ section {
   .col-3-description p {
     max-width: none;
   }
-  .col-6 {
-    margin-top: 15px;
+  .col-3 {
+    @include fillDiv(0px);
   }
 }
 @media screen and (max-width: 1040px) {
-  .col-6 {
-    margin-left: 20px;
-  }
 }
