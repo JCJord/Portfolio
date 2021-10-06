@@ -40,10 +40,11 @@ section {
 .col-1-title h3 {
   font-size: 2.3rem;
   color: $devtitle;
-  margin-left: 6px;
+  margin-left: 0px;
 }
 .col-1-description {
   margin-top: 15px;
+  max-width: 350px;
 }
 .col-1-description p {
   font-size: 17px;
@@ -73,7 +74,9 @@ section {
 .side-links-box {
   margin-top: 160px;
 }
-
+.side-links-box a {
+  transition: 0.3s ease;
+}
 .col-3-title {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -128,11 +131,11 @@ section {
 .title-project h1 {
   margin-bottom: 15px;
   padding-bottom: 5px;
-  font-size: 25px;
+  font-size: 29px;
   width: fit-content;
 }
 .title-project h2 {
-  font-size: 20px;
+  font-size: 23px;
   margin-bottom: 10px;
 }
 
@@ -169,7 +172,8 @@ section {
 }
 
 .project-stack h4 {
-  margin-bottom: 6px !important;
+  margin-bottom: 8px !important;
+  font-size: 17px;
 }
 .techs-container {
   display: flex;
@@ -179,13 +183,21 @@ section {
 }
 .overview-box {
   margin-bottom: 10px;
+  font-size: 14px;
 }
 .next-pages {
   margin-top: 20px;
 }
-.container {
-  background: linear-gradient(to right, $clearWhite 50%, $lightBlack 50%);
+.projects:nth-child(n + 7) {
+  display: none;
 }
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+}
+
 @media screen and (max-width: 768px) {
   section {
     flex-wrap: wrap;
@@ -197,7 +209,6 @@ section {
   span {
     font-size: 2rem;
     color: $devtitle;
-    margin-left: 2px;
   }
   .col-1-title h3 {
     font-size: 2.4rem;

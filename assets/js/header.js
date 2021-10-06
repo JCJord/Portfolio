@@ -34,26 +34,3 @@ function removeColorLogo() {
   const logo = document.querySelector(".logo-text")
   logo.style.color = "#c8d6df"
 }
-function menuHandler() {
-  const burger = document.getElementById("nav-icon4")
-
-  burger.addEventListener("click", () => {
-    if (!burger.classList.contains("open")) {
-      burger.classList.add("open")
-
-      addColorLogo()
-      toggleNav()
-      visibleCross()
-      scrollOff()
-    } else if (burger.classList.contains("open")) {
-      burger.classList.remove("open")
-
-      removeColorLogo()
-      toggleNav()
-      blackCross()
-      scrollOn()
-    }
-  })
-}
-
-menuHandler()

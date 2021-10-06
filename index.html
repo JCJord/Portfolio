@@ -9,8 +9,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>JC</title>
   </head>
+  <div class="loader-container">
+    <div class="loader">
+      <img
+        src="https://i.pinimg.com/originals/b5/3a/b6/b53ab608718000227d5d9a752cbd5d5c.gif"
+        alt=""
+      />
+    </div>
+  </div>
   <header>
     <div class="wrapper">
       <div class="header-box">
@@ -18,12 +27,13 @@
         <div class="links-desktop">
           <ul>
             <li>
-              <a href="" class="link">Me</a>
+              <a href="" class="link">Sobre</a>
             </li>
-            <li><a href="" class="link">Awards</a></li>
-            <li><a href="" class="link">Showcase</a></li>
-            <li><a href="" class="link">Why me</a></li>
+
+            <li><a href="" class="link">Linkedin</a></li>
+            <li><a href="" class="link">Projetos</a></li>
             <li><a href="" class="link">Github</a></li>
+            <li><a href="" class="link">Contato</a></li>
           </ul>
         </div>
         <div class="burger" id="nav-icon4">
@@ -34,10 +44,10 @@
       </div>
       <div id="mySidenav" class="sidenav">
         <div class="side-links-box">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+          <a href="#">Sobre</a>
+          <a href="#">Linkedin</a>
+          <a href="#">Github</a>
+          <a href="#">Contato</a>
         </div>
       </div>
     </div>
@@ -52,10 +62,10 @@
           <h1>Front-end Developer</h1>
         </div>
         <div class="col-1-description">
-          <p>Nice to e-meet you!</p>
-          <p>My name is Júlio, my clients call me JC.</p>
+          <p>Olá, eu sou o Júlio César.</p>
+          <p>Aplicações front-end responsivas, layouts fiéis ao design.</p>
         </div>
-        <div class="button-box"><a href="">Scroll Down</a></div>
+        <div class="button-box"><a href="">Ver Mais</a></div>
       </div>
       <div class="col-2">
         <img src="./assets/images/Untitled.svg" alt="" />
@@ -67,7 +77,13 @@
           <div class="col-3-title" style="display: flex">
             <h1>About Me</h1>
           </div>
-          <div class="col-3-description">
+          <div
+            class="col-3-description"
+            data-aos="fade-in"
+            data-aos="ease-in-out"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <p>
               I live in São Paulo City in the state of São Paulo Brazil, i'm
               graduated at university city of São Paulo, i'm focused on
@@ -88,7 +104,16 @@
           ></a>
         </div>
         <div class="col-4" id="luxy">
-          <div class="design-box-empty"></div>
+          <div
+            class="design-box-empty"
+            data-aos="fade-in"
+            data-aos="ease-in-out"
+            data-aos-once="true"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <img src="./assets/images/Macbook.svg" alt="" />
+          </div>
         </div>
       </section>
     </div>
@@ -180,7 +205,7 @@
               <li>EJS</li>
               <li>CSS3</li>
               <li>SCSS</li>
-              <li>Node</li>
+              <li>Node.JS</li>
             </ul>
             <ul class="bullets">
               <li>JavaScript</li>
@@ -198,7 +223,7 @@
             Projeto de blog pessoal sobre tecnologias e programação, projeto
             feito para praticar com Node.JS e banco de dados, o website possui
             um sistema de login que apenas usuários cadastrados pelo
-            adminstrador pode logar, o usuário adminstrador pode adicionar,
+            adminstrador podem logar, o usuário administrador pode adicionar,
             editar e deletar posts e artigos, também criar novos usuários.
           </p>
         </div>
@@ -215,8 +240,134 @@
         </div>
       </div>
     </section>
+    <section class="projects next-pages">
+      <div class="col-5">
+        <div class="title-project"></div>
+        <div class="title-project">
+          <h2>Todo List</h2>
+        </div>
+
+        <img src="./assets/images/Todo.png" alt="" />
+        <div class="project-links">
+          <a href="">Website demo</a>
+          <a href="">Source code</a>
+        </div>
+        <div class="project-description">
+          <p>
+            Projeto hospedado no Vercel, front-end de um projeto de lista de
+            afazeres.
+          </p>
+        </div>
+
+        <div class="project-stack">
+          <h4>Tecnologias usadas</h4>
+          <div class="techs-container">
+            <ul class="bullets">
+              <li>HTML</li>
+              <li>CSS3</li>
+              <li>SCSS</li>
+              <li>Vue</li>
+            </ul>
+            <ul class="bullets">
+              <li>TypeScript</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="overview-box">
+          <h1>Overview</h1>
+        </div>
+        <div class="project-description">
+          <p>
+            Front-end de um projeto Todo List, possui um sistema de login com
+            firebase API.
+          </p>
+        </div>
+        <div class="overview-box">
+          <h1>Features</h1>
+        </div>
+        <div class="techs-container">
+          <ul class="bullets">
+            <li>Cadastro de usuário</li>
+            <li>Login</li>
+            <li>Lazy load</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="projects next-pages">
+      <div class="col-5">
+        <div class="title-project"></div>
+        <div class="title-project">
+          <h2>Perguntas e respostas</h2>
+        </div>
+        <div class="img-container">
+          <img
+            class="lazy"
+            src="https://serravelha.com.br/images/loader.gif"
+            data-original="assets/images/AnswersQuestions.png"
+            alt=""
+          />
+        </div>
+
+        <div class="project-links">
+          <a href="">Website demo</a>
+          <a href="">Source code</a>
+        </div>
+        <div class="project-description">
+          <p>
+            Projeto hospedado no Heroku, website de perguntas e repostas
+            semelhante a Yahoo Respostas.
+          </p>
+        </div>
+
+        <div class="project-stack">
+          <h4>Tecnologias usadas</h4>
+          <div class="techs-container">
+            <ul class="bullets">
+              <li>EJS</li>
+              <li>CSS3</li>
+              <li>SCSS</li>
+              <li>Node.JS</li>
+            </ul>
+            <ul class="bullets">
+              <li>JavaScript</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="overview-box">
+          <h1>Overview</h1>
+        </div>
+        <div class="project-description">
+          <p>
+            Projeto website perguntas e respostas, website bem simples para
+            prática de conhecimentos no back-end com framework Node.JS, qualquer
+            usuário pode realizar perguntas e qualquer usuário pode responder,
+            conta com um formulário de pergunat e outro de respostas dentro da
+            pagina da própria pergunta.
+          </p>
+        </div>
+        <div class="overview-box">
+          <h1>Features</h1>
+        </div>
+        <div class="techs-container">
+          <ul class="bullets">
+            <li>Formulário de perguntas</li>
+            <li>Formulário de respostas</li>
+            <li>Listagem das perguntas na home page</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="show-box" id="showMore">Ver mais</div>
   </body>
-  <script src="./assets/js/main.js"></script>
+
   <script src="./assets/js/header.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
@@ -238,4 +389,13 @@
   ></script>
 
   <script src="./assets/js/transitions.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/loader.js"></script>
 </html>
