@@ -21,7 +21,7 @@
     left: 0%;
     width: 100%;
     height: 100%;
-    background-color: $lightBlack;
+    background-color: $blueLight;
     z-index: -1;
     transition: 0.7s ease;
   }
@@ -35,6 +35,7 @@
   }
   &:hover {
     color: $clearWhite !important;
+    border: 1px solid $blueLight;
     &:before {
       width: 100%;
     }
@@ -85,4 +86,42 @@
     background: $lightBlack;
     color: $clearWhite;
   }
+}
+.project-links .demo-button {
+  transition: 0.2s ease-out;
+  &:hover {
+    background-color: $lighterGrey;
+    border: none;
+  }
+}
+.source-button i {
+  position: relative;
+  left: 10px;
+}
+.project-links {
+  margin-top: 15px;
+  display: flex;
+
+  justify-content: space-between;
+  max-width: 375px;
+  height: auto width auto;
+}
+.project-links a {
+  padding: 7px 25px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+}
+.project-links a + .source-button {
+  background-color: $lightBlack !important;
+  color: $clearWhite;
+  transition: 0.2s ease-in;
+  &:hover {
+    background-color: $lighterBlack !important;
+  }
+}
+
+.demo-button i {
+  position: relative;
+  left: 10px;
 }

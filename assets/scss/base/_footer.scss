@@ -1,0 +1,14 @@
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rights a {
+  text-decoration: none;
+  color: $underline;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    color: $lightBlack;
+  }
+}

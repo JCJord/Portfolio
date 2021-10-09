@@ -16,7 +16,7 @@
   /* Stay at the top */
   left: 0;
   visibility: hidden;
-  background-color: #e23d60;
+  background-color: #1972f8;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
@@ -121,7 +121,7 @@ li {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: #ff4949;
+  background-color: #1972f8;
   -webkit-transition: width 0.25s ease-out;
   transition: width 0.25s ease-out;
 }
@@ -168,7 +168,6 @@ li {
 #nav-icon4 span {
   display: block;
   position: absolute;
-  height: 4px;
   width: 100%;
   background-color: #000;
   border-radius: 9px;
@@ -269,7 +268,7 @@ section {
 
 .col-1-subtitle h1 {
   font-size: 70px;
-  background-image: linear-gradient(76.9deg, #ff4949 27.2%, #e23d60 79.9%);
+  background-image: linear-gradient(76.9deg, #1972f8 27.2%, #0004ff 79.9%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -353,7 +352,7 @@ section {
 }
 
 .col-3-description b {
-  color: #f53847;
+  color: #1972f8;
 }
 
 .col-4 {
@@ -381,18 +380,30 @@ section {
   width: 100%;
 }
 
+.title-project {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .title-project h1 {
-  margin-bottom: 15px;
-  padding-bottom: 5px;
   font-size: 29px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-bottom: 25px;
+}
+
+.title-project:nth-child(1) {
+  margin-top: 30px;
 }
 
 .title-project h2 {
   font-size: 23px;
   margin-bottom: 10px;
+}
+
+.space {
+  margin-top: 30px !important;
 }
 
 .project-description {
@@ -407,7 +418,7 @@ section {
 .bullets li::before {
   content: "\2022";
   /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: red;
+  color: #1972f8;
   /* Change the color */
   font-weight: bold;
   /* If you want it to be bold */
@@ -453,11 +464,7 @@ section {
   font-size: 14px;
 }
 
-.next-pages {
-  margin-top: 20px;
-}
-
-.projects:nth-child(n + 7) {
+.projects:nth-child(n + 9) {
   display: none;
 }
 
@@ -466,6 +473,22 @@ section {
   height: 100vh;
   background-color: black;
   position: fixed;
+}
+
+.next-pages {
+  margin-top: 20px;
+}
+
+.col-7 {
+  border: dotted;
+  margin: 0 auto;
+}
+
+.contact-section {
+  border: dotted;
+  margin-bottom: 25px;
+  display: -ms-grid !important;
+  display: grid !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -501,6 +524,20 @@ section {
   }
   .container {
     background: none;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .project-links {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    width: 100% !important;
+    max-width: 500px;
+  }
+  .project-links a {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -632,7 +669,7 @@ a {
   left: 0%;
   width: 100%;
   height: 100%;
-  background-color: #222222;
+  background-color: #1972f8;
   z-index: -1;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
@@ -650,6 +687,7 @@ a {
 
 .btn1:hover {
   color: #fff !important;
+  border: 1px solid #1972f8;
 }
 
 .btn1:hover:before {
@@ -709,6 +747,56 @@ a {
   color: #fff;
 }
 
+.project-links .demo-button {
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.project-links .demo-button:hover {
+  background-color: #c5c5c5;
+  border: none;
+}
+
+.source-button i {
+  position: relative;
+  left: 10px;
+}
+
+.project-links {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 375px;
+  height: auto width auto;
+}
+
+.project-links a {
+  padding: 7px 25px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+}
+
+.project-links a + .source-button {
+  background-color: #222222 !important;
+  color: #fff;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.project-links a + .source-button:hover {
+  background-color: #585858 !important;
+}
+
+.demo-button i {
+  position: relative;
+  left: 10px;
+}
+
 .loader-container {
   width: 100%;
   height: 100vh;
@@ -728,5 +816,22 @@ a {
 
 .loader img {
   width: 600px;
+}
+
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rights a {
+  text-decoration: none;
+  color: #1972f8;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.rights a:hover {
+  color: #222222;
 }
 /*# sourceMappingURL=main.css.map */
