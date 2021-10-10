@@ -601,6 +601,10 @@ a {
     margin-left: 25px;
     margin-right: 25px;
   }
+  .contact {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
