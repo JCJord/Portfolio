@@ -168,6 +168,7 @@ li {
 #nav-icon4 span {
   display: block;
   position: absolute;
+  height: 4px;
   width: 100%;
   background-color: #000;
   border-radius: 9px;
@@ -301,7 +302,7 @@ section {
 }
 
 .col-2 img {
-  width: 100%;
+  width: 67%;
   max-width: 435px;
   margin: 50px auto;
 }
@@ -408,6 +409,7 @@ section {
 
 .project-description {
   max-width: 525px;
+  text-align: justify;
 }
 
 .bullets li {
@@ -477,18 +479,6 @@ section {
 
 .next-pages {
   margin-top: 20px;
-}
-
-.col-7 {
-  border: dotted;
-  margin: 0 auto;
-}
-
-.contact-section {
-  border: dotted;
-  margin-bottom: 25px;
-  display: -ms-grid !important;
-  display: grid !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -603,6 +593,10 @@ a {
   .col-1 h1 {
     font-size: 8vw;
   }
+  .col-8 {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -676,8 +670,8 @@ a {
 }
 
 .btn1 {
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .btn1:before {
@@ -822,6 +816,7 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .rights a {
@@ -833,5 +828,116 @@ footer {
 
 .rights a:hover {
   color: #222222;
+}
+
+.contact {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.contact p {
+  margin-top: 5px;
+}
+
+.contact-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 120px;
+}
+
+.col-8 {
+  width: 300px;
+  border: 1px solid #cccccc;
+  margin-right: 40px;
+  padding: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.whatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 4px solid #00b600;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.whatsapp:hover {
+  background-color: #00b600;
+  color: #fff;
+}
+
+.linkedin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 4px solid #235ec1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.linkedin:hover {
+  background-color: #235ec1;
+  color: #fff;
+}
+
+.gmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 4px solid #ff5353;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gmail:hover {
+  background-color: #ff5353;
+  color: #fff;
+}
+
+.whatsapp i {
+  font-size: 25px;
+}
+
+.linkedin i {
+  font-size: 25px;
+}
+
+.gmail i {
+  font-size: 24px;
+}
+
+.gmail span {
+  font-size: 18px;
+}
+
+.link_class {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=main.css.map */

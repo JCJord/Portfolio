@@ -54,6 +54,10 @@ a {
   .col-1 h1 {
     font-size: 8vw;
   }
+
+  .col-8 {
+    @include mobileSpace();
+  }
 }
 @media only screen and (max-width: 600px) {
   .col-1 h1 {

@@ -57,7 +57,7 @@ section {
   position: relative;
 }
 .col-2 img {
-  width: 100%;
+  width: 67%;
   max-width: 435px;
   margin: 50px auto;
 }
@@ -146,6 +146,7 @@ section {
 }
 .project-description {
   max-width: 525px;
+  text-align: justify;
 }
 
 .bullets li {
@@ -203,16 +204,6 @@ section {
 
 .next-pages {
   margin-top: 20px;
-}
-
-.col-7 {
-  border: dotted;
-  margin: 0 auto;
-}
-.contact-section {
-  border: dotted;
-  margin-bottom: 25px;
-  display: grid !important;
 }
 
 @media screen and (max-width: 768px) {
