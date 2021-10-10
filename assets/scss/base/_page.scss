@@ -58,6 +58,9 @@ a {
   .col-8 {
     @include mobileSpace();
   }
+  .proj {
+    @include mobileSpace();
+  }
 }
 @media only screen and (max-width: 600px) {
   .col-1 h1 {
