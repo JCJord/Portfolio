@@ -34,3 +34,11 @@ function removeColorLogo() {
   const logo = document.querySelector(".logo-text")
   logo.style.color = "#c8d6df"
 }
+
+function toggleOnClick() {
+  const mySidenav = document.getElementById("mySidenav")
+
+  mySidenav.classList.toggle("release")
+  const body = document.getElementById("body")
+  body.style.overflow = "visible"
+}

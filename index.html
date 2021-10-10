@@ -30,9 +30,13 @@
               <a href="" class="link">Sobre</a>
             </li>
 
-            <li><a href="" class="link">Linkedin</a></li>
-            <li><a href="" class="link">Projetos</a></li>
-            <li><a href="" class="link">Github</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/jc-jord/" class="link"
+                >LinkedIn</a
+              >
+            </li>
+            <li><a href="#project" class="link">Projetos</a></li>
+            <li><a href="https://github.com/JCJord" class="link">Github</a></li>
             <li><a href="" class="link">Contato</a></li>
           </ul>
         </div>
@@ -44,10 +48,10 @@
       </div>
       <div id="mySidenav" class="sidenav">
         <div class="side-links-box">
-          <a href="#">Sobre</a>
-          <a href="#">Linkedin</a>
-          <a href="#">Github</a>
-          <a href="#">Contato</a>
+          <a href="#about" onclick="toggleOnClick()">Sobre</a>
+          <a href="https://www.linkedin.com/in/jc-jord/">Linkedin</a>
+          <a href="https://github.com/JCJord">Github</a>
+          <a href="#contact" onclick="toggleOnClick()">Contato</a>
         </div>
       </div>
     </div>
@@ -72,7 +76,7 @@
       </div>
     </section>
     <div class="container">
-      <section class="about-section">
+      <section id="about" class="about-section">
         <div class="col-3">
           <div class="col-3-title" style="display: flex">
             <h1>About Me</h1>
@@ -117,7 +121,7 @@
         </div>
       </section>
     </div>
-    <div class="proj title-project">
+    <div id="project" class="proj title-project">
       <h1>Projects</h1>
     </div>
     <section class="projects">
@@ -456,7 +460,7 @@
     </section>
 
     <div class="show-box" id="showMore">Ver mais</div>
-    <div class="contact">
+    <div id="contact" class="contact">
       <h1>Contato</h1>
       <p>Diga olá, vamos conversar.</p>
     </div>
