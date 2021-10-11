@@ -27,17 +27,24 @@
         <div class="links-desktop">
           <ul>
             <li>
-              <a href="" class="link">Sobre</a>
+              <a href="#about" class="link">Sobre</a>
             </li>
 
             <li>
-              <a href="https://www.linkedin.com/in/jc-jord/" class="link"
+              <a
+                href="https://www.linkedin.com/in/jc-jord/"
+                class="link"
+                target="_blank"
                 >LinkedIn</a
               >
             </li>
             <li><a href="#project" class="link">Projetos</a></li>
-            <li><a href="https://github.com/JCJord" class="link">Github</a></li>
-            <li><a href="" class="link">Contato</a></li>
+            <li>
+              <a href="https://github.com/JCJord" class="link" target="_blank"
+                >Github</a
+              >
+            </li>
+            <li><a href="#contact" class="link">Contato</a></li>
           </ul>
         </div>
         <div class="burger" id="nav-icon4">
@@ -49,8 +56,18 @@
       <div id="mySidenav" class="sidenav">
         <div class="side-links-box">
           <a href="#about" onclick="toggleOnClick()">Sobre</a>
-          <a href="https://www.linkedin.com/in/jc-jord/">Linkedin</a>
-          <a href="https://github.com/JCJord">Github</a>
+          <a
+            href="https://www.linkedin.com/in/jc-jord/"
+            onclick="toggleOnClick()"
+            target="_blank"
+            >Linkedin</a
+          >
+          <a
+            href="https://github.com/JCJord"
+            onclick="toggleOnClick()"
+            target="_blank"
+            >Github</a
+          >
           <a href="#contact" onclick="toggleOnClick()">Contato</a>
         </div>
       </div>
@@ -69,7 +86,12 @@
           <p>Olá, eu sou o Júlio César.</p>
           <p>Aplicações front-end responsivas, layouts fiéis ao design.</p>
         </div>
-        <div class="button-box"><a href="">Ver Mais</a></div>
+
+        <div class="button-box">
+          <a href="#project"
+            >Ver Mais <i class="fas fa-long-arrow-alt-down"></i
+          ></a>
+        </div>
       </div>
       <div class="col-2">
         <img src="./assets/images/Untitled.svg" alt="" />
@@ -79,7 +101,7 @@
       <section id="about" class="about-section">
         <div class="col-3">
           <div class="col-3-title" style="display: flex">
-            <h1>About Me</h1>
+            <h1>Sobre</h1>
           </div>
           <div
             class="col-3-description"
@@ -89,21 +111,22 @@
             data-aos-duration="1000"
           >
             <p>
-              I live in São Paulo City in the state of São Paulo Brazil, i'm
-              graduated at university city of São Paulo, i'm focused on
-              Front-end & Back-end tecnologies approachs, specifically
-              <b>JavaScript</b> frameworks like <b>Angular</b>
-              <b>and Node,</b> i do have habilities with pure JavaScript as well
-              with CSS and SCSS. You can check out my projects and code below.
+              Sou desenvolvedor web, graduado em Análise e Desenvolvimento de
+              Sistemas, com foco em resolução de problemas, aplicações completas
+              e performance. Sou entusiasta de tecnologia, gosto de aprender
+              programação na prática, sempre aberto a novos <b>desáfios.</b>
             </p>
             <br />
             <p>
-              I've worked in some personal projects, which gave me a lot of
-              experience. Check out my projects below.
+              Já trabalhei em projetos, que me garantiram experiência tanto em
+              projetos <b>Front-end</b> quanto <b>Back-end</b>.
             </p>
           </div>
 
-          <a href="" class="btn btn1">
+          <a
+            href="https://drive.google.com/u/0/uc?id=13dncPQGkFrtt7RYV3FodefLRQKvYHMEH&export=download"
+            class="btn btn1"
+          >
             Download CV<i class="fas fa-cloud-download-alt"></i
           ></a>
         </div>
@@ -122,12 +145,12 @@
       </section>
     </div>
     <div id="project" class="proj title-project">
-      <h1>Projects</h1>
+      <h1>Projetos</h1>
     </div>
     <section class="projects">
       <div class="col-5">
         <div class="title-project">
-          <h2>Website de posts</h2>
+          <h2>Aplicação web de posts</h2>
         </div>
         <div class="container-img">
           <img src="./assets/images/angular.png" alt="" />
@@ -137,10 +160,10 @@
           <a
             href="http://mean-stack-build-up-node.s3-website-sa-east-1.amazonaws.com/"
             class="demo-button"
-            >Website demo<i class="fas fa-desktop"></i
+            >Website Demo<i class="fas fa-desktop"></i
           ></a>
           <a href="https://github.com/JCJord/Angular-rest" class="source-button"
-            >Source code <i class="fab fa-github"></i
+            >Código Fonte <i class="fab fa-github"></i
           ></a>
         </div>
         <div class="project-description">
@@ -173,11 +196,10 @@
         </div>
         <div class="project-description">
           <p>
-            Aplicação web de postagens, usuários registrados e logados podem
-            criar seus posts, alterar ou deleta-los, o usuário tambem deve
-            inserir uma imagen em seu post. Apenas usuários criadores dos posts
-            podem realizar alterações ou deleta-los, sistema de login com Token
-            JWT, após uma hora o usuário é deslogado.
+            Aplicação web de postagens, contém um formulário de registro e de
+            login, necessários para realizar postagens, cada usuário pode
+            editar, criar seus posts também como deletá-los, usuários podem
+            apenas editar seus próprios posts e não o de terceiros.
           </p>
         </div>
         <div class="overview-box">
@@ -206,7 +228,7 @@
             >Website demo<i class="fas fa-desktop"></i
           ></a>
           <a href="https://github.com/JCJord/Image-share" class="source-button"
-            >Source code <i class="fab fa-github"></i
+            >Código Fonte <i class="fab fa-github"></i
           ></a>
         </div>
         <div class="project-description">
@@ -238,11 +260,11 @@
         </div>
         <div class="project-description">
           <p>
-            Projeto inspirado no banco de imagens <a href="">Unsplash</a>,
-            website permite download de imagens do servidor Lorem Picsum, o
-            projeto possui uma barra de pesquisa que busca as imagens de
-            determinado autor na barra de pesquisa, design feito com base no
-            website unsplash.
+            Projeto inspirado no banco de imagens
+            <a href="https://unsplash.com/">Unsplash</a>, website permite
+            download de imagens do servidor Lorem Picsum, o projeto possui uma
+            barra de pesquisa que busca as imagens de determinado autor na barra
+            de pesquisa, design feito com base no website unsplash.
           </p>
         </div>
         <div class="overview-box">
@@ -272,7 +294,7 @@
           <a
             href="https://github.com/JCJord/UnusualModern"
             class="source-button"
-            >Source code <i class="fab fa-github"></i
+            >Código Fonte <i class="fab fa-github"></i
           ></a>
         </div>
         <div class="project-description">
@@ -329,7 +351,7 @@
       <div class="col-5">
         <div class="title-project"></div>
         <div class="title-project">
-          <h2>Todo List</h2>
+          <h2>Lista de atividades</h2>
         </div>
 
         <img src="./assets/images/Todo.png" alt="" />
@@ -338,7 +360,7 @@
             >Website demo<i class="fas fa-desktop"></i
           ></a>
           <a href="https://github.com/JCJord/TodoList" class="source-button"
-            >Source code <i class="fab fa-github"></i
+            >Código Fonte <i class="fab fa-github"></i
           ></a>
         </div>
         <div class="project-description">
@@ -370,8 +392,8 @@
         </div>
         <div class="project-description">
           <p>
-            Front-end de um projeto Todo List, possui um sistema de login com
-            firebase API.
+            Front-end de um projeto lista de afazeres, possui um sistema de
+            login com firebase API.
           </p>
         </div>
         <div class="overview-box">
@@ -403,10 +425,10 @@
 
         <div class="project-links">
           <a href="https://jjanswers.herokuapp.com/" class="demo-button"
-            >Website demo<i class="fas fa-desktop"></i
+            >Website Demo<i class="fas fa-desktop"></i
           ></a>
           <a href="https://github.com/JCJord/AnswersJJ" class="source-button"
-            >Source code <i class="fab fa-github"></i
+            >Código Fonte <i class="fab fa-github"></i
           ></a>
         </div>
 
@@ -439,11 +461,11 @@
         </div>
         <div class="project-description">
           <p>
-            Projeto website perguntas e respostas, website bem simples para
-            prática de conhecimentos no back-end com framework Node.JS, qualquer
-            usuário pode realizar perguntas e qualquer usuário pode responder,
-            conta com um formulário de perguntas e outro de respostas dentro da
-            pagina da própria pergunta.
+            Projeto website perguntas e respostas, website para treino de
+            conhecimentos no back-end com framework Node.JS, qualquer usuário
+            pode realizar perguntas e qualquer usuário pode responder, conta com
+            um formulário de perguntas e outro de respostas dentro da pagina da
+            própria pergunta.
           </p>
         </div>
         <div class="overview-box">
@@ -459,6 +481,55 @@
       </div>
     </section>
 
+    <section class="projects next-pages">
+      <div class="col-5">
+        <div class="title-project"></div>
+        <div class="title-project">
+          <h2>Layout de página web</h2>
+        </div>
+        <div class="img-container">
+          <img
+            class="lazy"
+            src="https://serravelha.com.br/images/loader.gif"
+            data-original="assets/images/Layout.png"
+            alt=""
+          />
+        </div>
+
+        <div class="project-links">
+          <a href="https://jcjord.github.io/Layout/" class="demo-button"
+            >Website Demo<i class="fas fa-desktop"></i
+          ></a>
+          <a href="https://github.com/JCJord/Layout" class="source-button"
+            >Código Fonte <i class="fab fa-github"></i
+          ></a>
+        </div>
+
+        <div class="project-description">
+          <p>Projeto hospedado no github Pages.</p>
+        </div>
+
+        <div class="project-stack">
+          <h4>Tecnologias usadas</h4>
+          <div class="techs-container">
+            <ul class="bullets">
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="overview-box">
+          <h1>Descrição</h1>
+        </div>
+        <div class="project-description">
+          <p>Layout de página web feito com Css3 e animações JavaScript.</p>
+        </div>
+      </div>
+    </section>
     <div class="show-box" id="showMore">Ver mais</div>
     <div id="contact" class="contact">
       <h1>Contato</h1>
@@ -502,7 +573,7 @@
 
   <script>
     var options = {
-      strings: ["Front-end", "Back-end", "User interface"],
+      strings: ["Front-end", "Back-end"],
       typeSpeed: 80,
       backSpeed: 80,
       loop: true,

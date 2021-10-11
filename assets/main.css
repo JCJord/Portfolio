@@ -314,6 +314,12 @@ section {
   font-size: 17px;
 }
 
+.button-box i {
+  position: relative;
+  left: 45px;
+  font-size: 16px;
+}
+
 .side-links-box {
   margin-top: 160px;
 }
@@ -538,6 +544,10 @@ section {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -946,6 +956,9 @@ footer {
   .contact-section {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .col-8 {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
